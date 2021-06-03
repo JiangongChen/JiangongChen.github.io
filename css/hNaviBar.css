@@ -1,0 +1,73 @@
+
+.container-fluid {
+  max-width: 960px;
+}
+
+.navbar-header {
+  width: 30%;
+}
+
+
+#myNavbar ul li:hover:not(.active) {
+  background-color: #ddd;
+}
+
+//#myNavbar ul li.active {
+  color: white;
+  background-color: #2A88AD;
+}
+
+
+.hbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #f3f3f3;
+  //border: 1px solid #e7e7e7;
+  overflow: hidden;
+  line-height: 20px;
+  font-size: 20px;
+
+  z-index: 1;
+}
+
+.hbar ul{
+  list-style-type: none;
+  top: 0;
+  width: 100%;
+  max-width: 960px;
+  /* center the navigation bar content*/
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0;
+  padding: 0;
+}
+
+.hbar li {
+  float: left;
+}
+
+.headBar {
+  width: 30%;
+}
+
+.hbar li a {
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.hbar li a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+.hbar li a.active {
+  color: white;
+  background-color: #2A88AD;
+}

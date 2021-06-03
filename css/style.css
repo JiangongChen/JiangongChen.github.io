@@ -1,0 +1,72 @@
+#override-body {
+  padding: 40px;
+  background:#AEE4FF;
+  position: relative;
+}
+
+/*to avoid the content hidden by navbar after jump to the anchor*/
+:target::before {
+  content: "";
+  display: block;
+  height: 80px; /* fixed header height*/
+  margin: -80px 0 0; /* negative fixed header height */
+}
+
+#container{
+	max-width: 960px;
+	margin: auto;
+	display: flex;
+  flex-wrap: wrap;
+
+  padding:0px 30px;
+  margin:0px auto;
+  background: #FFF;
+  border-radius: 10px;
+  -webkit-border-radius:10px;
+  -moz-border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+  -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+}
+
+/* Responsive layout - makes a one column layout (100%) instead of a two-column layout */
+@media (max-width: 800px) {
+  .content, #sidebar {
+    flex: 100%;
+  }
+  #sidebar img {
+    width: 60%;
+  }
+  .navbar-header {
+  width: auto;
+  }
+}
+
+.content{
+	flex: 70%;
+	font-size: 20px;
+}
+
+.content hr{
+	border: 2px dashed black;
+}
+
+.content a:link {
+  text-decoration: none;
+  color: blue;
+}
+
+.content a:visited {
+  text-decoration: none;
+  color: blue;
+}
+
+.content a:hover {
+  text-decoration: none;
+  color: blueviolet;
+}
+
+.content a:active {
+  text-decoration: none;
+  color: blueviolet;
+}
